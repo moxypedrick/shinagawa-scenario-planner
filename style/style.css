@@ -203,6 +203,10 @@ a:hover {
   font-size: 14px;
 }
 
+.item{
+  width: 14vw;
+  position: relative;
+}
 
 .listings .item.active .title,
 .listings .item .title:hover { color: #00acc8ff; }

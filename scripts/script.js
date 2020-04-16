@@ -21,16 +21,6 @@ var map = new mapboxgl.Map({
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-options = {
-  success: function(files){
-   
-  },
-  cancel: function(){
-           
-  },
-};
-var button2 = Dropbox.createChooseButton(options);
-document.getElementById("dropboxContainer").appendChild(button2);
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
