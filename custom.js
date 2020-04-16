@@ -1,6 +1,9 @@
 options = {
     success: function(files){
-        console.log(files.link);
+        
+        for(i = 0; i &amp;amp;amp;amp;lt; files.length; i++){
+            console.log(files[i].link);
+    }
     },
     cancel: function(){
              
