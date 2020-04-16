@@ -6,6 +6,6 @@ options = {
              
     },
   };
-  var button2 = Dropbox.createChooseButton(options);
+var button2 = Dropbox.createChooseButton(options);
 document.getElementById("dropboxContainer").appendChild(button2);
 
