@@ -18,17 +18,16 @@ var map = new mapboxgl.Map({
     customAttribution: ['<a href=https://atlantaregional.org/ target=_blank>Atlanta Regional Commission</a>','<a href=https://www.epa.gov/eco-research/ecoregions target=_blank>EPA Eco-Regions</a>','<a href=https://hdsc.nws.noaa.gov/hdsc/pfds/pfds_map_cont.html?bkmrk=ga target=_blank>NOAA - Storm Data</a>', '<a href=https://www.epa.gov/watersense/water-budget-data-finder target=_blank>EPA - ETP</a>']
 });
 
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("dropdown");
 var i;
+
+
+
 
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -37,6 +36,8 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 } 
+
+ 
 
 
 var amenitiesFile = document.getElementById("amenities");

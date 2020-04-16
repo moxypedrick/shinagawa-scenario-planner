@@ -7,7 +7,9 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>
     
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <title>Shinagawa 70-70</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
@@ -31,12 +33,11 @@
       <div class="header1">
         <img src="" class="logo-image" alt="Shinagawa 70-70">
       </div>
-      <button class="accordion">
-        <div class="icon">
-          <img src="media/Responsive.svg" class="logo-image2" alt="Icon">
-          <p class="pad2 title">Responsive + Resilient</p>
-        </div>
-      </button>
+
+      <div class="dropdown">
+        <button id="responsive" class="accordion responsive btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Responsive.svg" class="logo-image2" alt="Icon">Responsive + Resilient <span class="caret"></span></button>
+        
+      </div>
       <div class="panel">
         <div class='item' id='listing-1'>
           <a href='#' class='title'>Rainfall Runoff Reduction</a>
@@ -49,12 +50,10 @@
           <div id='netET1'>View these layers</div>
         </div>
       </div>
-      <button class="accordion">
-        <div class="icon">
-          <img src="media/Green.svg" class="logo-image2" alt="Icon of walkshed">
-          <p class="pad2 title">Green</p>
-        </div>
-      </button>
+
+      <div class="dropdown">
+        <button id="green" class="accordion green btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret"></span></button>
+      </div>
       <div class="panel">
         <div class='item' id='listing-1'>
           <a href='#' class='title'>Urban Water Metabolism</a>
@@ -67,49 +66,53 @@
           <div id='netET1'>View these layers</div>
         </div>
       </div>
-      <button class="accordion">
-        <div class="icon">
-          <img src="media/Connected.svg" class="logo-image2" alt="Icon">
-          <p class="pad2 title">Connected</p>
+
+      <div class="dropdown">
+        <button id="connected" class="accordion connected btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Connected.svg" class="logo-image2" alt="Icon">Connected<span class="caret"></span></button>
+          <!--<div class="icon">
+            <img src="media/Connected.svg" class="logo-image2" alt="Icon">
+            <p class="pad2 title">Connected</p>
+          </div>-->
         </div>
-      </button>
-      <div class="panel">
-        <div class='item' id='listing-0'>
-          <a href='#' class='title'>Proximity to transportation networks alternative to car</a>
-          <div id='netET'>view buffers/walksheds</div>
+        <div class="panel">
+          <div class='item' id='listing-0'>
+            <a href='#' class='title'>Proximity to transportation networks alternative to car</a>
+            <div id='netET'>view buffers/walksheds</div>
+          </div>
+          <div class='item' id='listing-1'>
+            <a href='#' class='title'>Road Space for Pedestrians</a>
+            <div id='netET1'>Results</div>
+            <div id='netET1'>View these layers</div>
+          </div>
+          <div class='item' id='listing-2'>
+            <a href='#' class='title'>Number of intersections per square kilometer</a>
+            <div id='netET1'>Results</div>
+            <div id='netET1'>View these layers</div>
+          </div>
+          <div class='item' id='listing-3'>
+            <a href='#' class='title'>Ryan's Walkscore</a>
+            <div id='netET1'>Results</div>
+            <div id='netET1'>View these layers</div>
+          </div>
+          <div class='item' id='listing-3'>
+            <a href='#' class='title'>Residential Buildings w/i 5 minutes of transit</a>
+            <div id='netET1'>Results</div>
+            <div id='netET1'>View these layers</div>
+          </div>
+          <div class='item' id='listing-3'>
+            <a href='#' class='title'>Maximum pedestrian block length</a>
+            <div id='netET1'>Results</div>
+            <div id='netET1'>View these layers</div>
+          </div>
         </div>
-        <div class='item' id='listing-1'>
-          <a href='#' class='title'>Road Space for Pedestrians</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
-        </div>
-        <div class='item' id='listing-2'>
-          <a href='#' class='title'>Number of intersections per square kilometer</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
-        </div>
-        <div class='item' id='listing-3'>
-          <a href='#' class='title'>Ryan's Walkscore</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
-        </div>
-        <div class='item' id='listing-3'>
-          <a href='#' class='title'>Residential Buildings w/i 5 minutes of transit</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
-        </div>
-        <div class='item' id='listing-3'>
-          <a href='#' class='title'>Maximum pedestrian block length</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
-        </div>
-      </div>
-      <button class="accordion">
-        <div class="icon">
+    
+    <div class="dropdown">
+      <button id="datadriven" class="accordion datadriven btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span></button>
+        <!--<div class="icon">
           <img src="media/DataDriven.svg" class="logo-image2" alt="Icon">
           <p class="pad2 title">Data Driven</p>
-        </div>
-      </button>
+        </div>-->
+      </div>
       <div class="panel">
         <div class='item' id='listing-4'>
           <a href='#' class='title'>Balance btween active and residential zones</a>
@@ -117,12 +120,14 @@
           <div id='netET1'>View these layers</div>
         </div>
       </div>
-      <button class="accordion">
-        <div class="icon">
+    
+    <div class="dropdown">
+      <button id="inclusive" class="accordion inclusive btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span></button>
+        <!--<div class="icon">
           <img src="media/Inclusive.svg" class="logo-image2" alt="Icon">
           <p class="pad2 title">Inclusive</p>
-        </div>
-      </button>
+        </div>-->
+      </div>
       <div class="panel">
         <div class='item' id='listing-1'>
           <a href='#' class='title'>Urban Diversity Index</a>
@@ -145,7 +150,7 @@
           <div id='netET1'>View these layers</div>
         </div>
       </div> 
-
+    
       
       
     </div>
@@ -155,7 +160,7 @@
     </div>    
     <div id="foot" class="foot2">
       <div>
-        <button class="instructions" onClick="myFunction()">Data Files <i class="fa fa-navicon"></i></button>
+        <button class="instructions" onClick="myFunction()">Data Files <i class="fa fa-navicon"></i></button> 
       </div>
       <div class="sidebar-foot-1 whole">
         <div class='listings'>
@@ -200,6 +205,26 @@
         };
       </script>
     </div>
+    <script>
+      $(document).ready(function(){
+        $(".dropdown").on("hide.bs.dropdown", function(){
+          $(".responsive").html('<img src="media/Responsive.svg" class="logo-image2" alt="Icon">Responsive + Resilient <span class="caret"></span>');
+          $(".green").html('<img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret"></span>');
+          $(".connected").html('<img src="media/Connected.svg" class="logo-image2" alt="Icon">Connected<span class="caret"></span>');
+          $(".datadriven").html('<img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span>');
+          $(".inclusive").html('<img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span>');
+        
+        });
+        $(".dropdown").on("show.bs.dropdown", function(){
+          $(".responsive").html('<img src="media/Responsive.svg" class="logo-image2" alt="Icon">Responsive + Resilient <span class="caret caret-up"></span>');
+          $(".green").html('<img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret caret-up"></span>');
+          $(".connected").html('<img src="media/Connected.svg" class="logo-image2" alt="Icon">Connected<span class="caret caret-up"></span>');
+          $(".datadriven").html('<img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret caret-up"></span>');
+          $(".inclusive").html('<img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret caret-up"></span>');
+        });
+      });
+      
+      </script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
     <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>  

@@ -216,6 +216,12 @@ a:hover {
   border-right: 1px solid #eee;
 }
 
+
+.caret.caret-up {
+  border-top-width: 0;
+  border-bottom: 4px solid #fff;
+}
+
 .listings .item.active .title,
 .listings .item .title:hover { color: #00acc8ff; }
 
@@ -250,13 +256,13 @@ a:hover {
 }  
 
 .icon{
-  width:20vw;
+  width:10vw;
   border: 2px;
   overflow: hidden;
 }
 
 .icon img{
-  width:20vw;
+  width:10vw;
   float:left;
   margin-right: 15px;
 }
