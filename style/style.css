@@ -125,17 +125,7 @@ h1 {
 
 
  /* Style the buttons that are used to open and close the accordion panel */
- .accordion {
-  background-color: #d47499;
-  color: #eee;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
+ 
 /*#a1ab3a
 #f9bd1f
 #c1d2ec
@@ -216,7 +206,71 @@ a:hover {
   border-right: 1px solid #eee;
 }
 
+.eval{
+  width: 22vw;
+  display: inline-block;
+  vertical-align: middle;
+}
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 6px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 .caret.caret-up {
   border-top-width: 0;
   border-bottom: 4px solid #fff;
@@ -302,6 +356,20 @@ a:hover {
 .logo-image2{
     width: 5vw;
     max-width:40px;
+  }
+
+
+  .accordion {
+    display: block;
+    font: 'Roboto Slab', serif;
+    background-color: #d47499;
+    color: #eee;
+    
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    cursor: pointer;
   }
 
 .instructions{

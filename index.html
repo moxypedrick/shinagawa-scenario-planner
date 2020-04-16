@@ -34,120 +34,171 @@
         <img src="" class="logo-image" alt="Shinagawa 70-70">
       </div>
 
-      <div class="dropdown">
-        <button id="responsive" class="accordion responsive btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Responsive.svg" class="logo-image2" alt="Icon">Responsive + Resilient <span class="caret"></span></button>
+      <div class="dropdown"> <!--accordion responsive btn btn-primary dropdown-toggle   type="button" data-toggle="dropdown"-->
+        <button id="responsive" class="accordion responsive" type="button" data-toggle="dropdown"><img src="media/Responsive.svg" class="logo-image2" alt="Icon">Responsive + Resilient <span class="caret"></span></button>
         
       </div>
       <div class="panel">
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Rainfall Runoff Reduction</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='rr_reduction'>Results</div>
+          <div id='rr_reduction1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Green Roofs</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='greenroof'>Results</div>
+          <div id='greenroof1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
       </div>
 
       <div class="dropdown">
-        <button id="green" class="accordion green btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret"></span></button>
+        <button id="green" class="accordion green" type="button" data-toggle="dropdown"><img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret"></span></button>
       </div>
       <div class="panel">
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Urban Water Metabolism</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='urban_water_met'>Results</div>
+          <div id='urba_water_met1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Urban Energy Metabolism</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='urban_energy_met'>Results</div>
+          <div id='urban_energy_met1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
       </div>
 
       <div class="dropdown">
-        <button id="connected" class="accordion connected btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Connected.svg" class="logo-image2" alt="Icon">Connected<span class="caret"></span></button>
+        <button id="connected" class="accordion connected" type="button" data-toggle="dropdown"><img src="media/Connected.svg" class="logo-image2" alt="Icon">Connected<span class="caret"></span></button>
           <!--<div class="icon">
             <img src="media/Connected.svg" class="logo-image2" alt="Icon">
             <p class="pad2 title">Connected</p>
           </div>-->
         </div>
         <div class="panel">
-          <div class='item' id='listing-0'>
+          <div class='eval' id='listing-0'>
             <a href='#' class='title'>Proximity to transportation networks alternative to car</a>
-            <div id='netET'>view buffers/walksheds</div>
+            <div id='netET'>View 
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
           </div>
-          <div class='item' id='listing-1'>
+          <div class='eval' id='listing-1'>
             <a href='#' class='title'>Road Space for Pedestrians</a>
-            <div id='netET1'>Results</div>
-            <div id='netET1'>View these layers</div>
+            <div id='road_space'>Results</div>
+            <div id='road_space1'>View:
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
           </div>
-          <div class='item' id='listing-2'>
+          <div class='eval' id='listing-2'>
             <a href='#' class='title'>Number of intersections per square kilometer</a>
-            <div id='netET1'>Results</div>
-            <div id='netET1'>View these layers</div>
+            <div id='inter_kilo'>Results</div>
+            <div id='inter_kilo1'>View:
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
           </div>
-          <div class='item' id='listing-3'>
+          <div class='eval' id='listing-3'>
             <a href='#' class='title'>Ryan's Walkscore</a>
-            <div id='netET1'>Results</div>
-            <div id='netET1'>View these layers</div>
+            <div id='walkscore'>Results</div>
+            <div id='walkscore1'>View<label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></div>
           </div>
-          <div class='item' id='listing-3'>
+          <div class='eval' id='listing-3'>
             <a href='#' class='title'>Residential Buildings w/i 5 minutes of transit</a>
-            <div id='netET1'>Results</div>
-            <div id='netET1'>View these layers</div>
+            <div id='resident_transit'>Results</div>
+            <div id='resident_transit1'>View<label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></div>
           </div>
-          <div class='item' id='listing-3'>
+          <div class='eval' id='listing-3'>
             <a href='#' class='title'>Maximum pedestrian block length</a>
-            <div id='netET1'>Results</div>
-            <div id='netET1'>View these layers</div>
+            <div id='ped_block'>Results</div>
+            <div id='ped_block1'>View<label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></div>
           </div>
         </div>
     
     <div class="dropdown">
-      <button id="datadriven" class="accordion datadriven btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span></button>
+      <button id="datadriven" class="accordion datadriven" type="button" data-toggle="dropdown"><img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span></button>
         <!--<div class="icon">
           <img src="media/DataDriven.svg" class="logo-image2" alt="Icon">
           <p class="pad2 title">Data Driven</p>
         </div>-->
       </div>
       <div class="panel">
-        <div class='item' id='listing-4'>
+        <div class='eval' id='listing-4'>
           <a href='#' class='title'>Balance btween active and residential zones</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='activity_balance'>Results</div>
+          <div id='activity_balance1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
       </div>
     
     <div class="dropdown">
-      <button id="inclusive" class="accordion inclusive btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span></button>
+      <button id="inclusive" class="accordion inclusive" type="button" data-toggle="dropdown" ><img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span></button>
         <!--<div class="icon">
           <img src="media/Inclusive.svg" class="logo-image2" alt="Icon">
           <p class="pad2 title">Inclusive</p>
         </div>-->
       </div>
       <div class="panel">
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Urban Diversity Index</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='urban_diversity'>Results</div>
+          <div id='urban_diversity1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Absolute Compactness</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='compact'>Results</div>
+          <div id='compact1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Green Space Deficit</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='green_space'>Results</div>
+          <div id='green_space1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
-        <div class='item' id='listing-1'>
+        <div class='eval' id='listing-1'>
           <a href='#' class='title'>Amenities</a>
-          <div id='netET1'>Results</div>
-          <div id='netET1'>View these layers</div>
+          <div id='amenities'>Results</div>
+          <div id='amenities1'>View<label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label></div>
         </div>
       </div> 
     
