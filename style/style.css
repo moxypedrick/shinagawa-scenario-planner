@@ -57,7 +57,7 @@ h1 {
 .sidebar-foot-1 {  
   font: 300 15px/26px 'Roboto Slab', serif;
   position: fixed;
-  height: 35vh;
+  height: 15vh;
   line-height:1.5;
   top: 100;
   overflow: visible;
@@ -87,7 +87,6 @@ h1 {
 .listings-1 .item {
   font: 300 'Roboto Slab', serif;
   display: block;
-  border-bottom: 1px solid #eee;
   padding: 1px;
   text-decoration: none;
   font-size:10pt;
@@ -183,7 +182,6 @@ a:hover {
 }
 .listings .item {
   display: block;
-  border-bottom: 1px solid #eee;
   padding: 10px;
   text-decoration: none;
 }
@@ -203,9 +201,19 @@ a:hover {
   font-size: 14px;
 }
 
+
+.container {
+  width: 95vw;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
 .item{
-  width: 14vw;
-  position: relative;
+  width: 16vw;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #eee;
 }
 
 .listings .item.active .title,
@@ -312,7 +320,7 @@ a:hover {
   bottom: 0px;
   z-index: 1;
   width: 100vw;
-  height: 35vh;
+  height: 20vh;
   background-color: #fff;
   font: 300 'Roboto Slab', serif;
   -webkit-transition: height .3s ease;
