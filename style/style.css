@@ -110,7 +110,7 @@ h1 {
   left: 0vw;
   width: 100vw;
   height: 10vh;
-  background-color: #a1ab3a;
+  background-color: #c1d2ec;
 }
 
 .chart{
@@ -381,12 +381,12 @@ input:checked + .slider:before {
   font-size: 18px;
   text-align: center;
   color: #fff;
-  background-color:#6cbe4cff;
+  background-color:#d47499;
   cursor: pointer;
 
   }
   .active, .instructions:hover{
-    background-color:#555
+    background-color:#c0198d
   }
 
 .foot2{

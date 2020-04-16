@@ -39,44 +39,67 @@
         
       </div>
       <div class="panel">
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Rainfall Runoff Reduction</a>
-          <div id='rr_reduction'>Results</div>
-          <div id='rr_reduction1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Green Roofs</a>
-          <div id='greenroof'>Results</div>
-          <div id='greenroof1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
+        <table class='eval' id='listing-1'>
+          <tr>
+            <th>Criteria</th>
+            <th>Results</th>
+            <th>View</th>
+          </tr>
+          <tr>
+            <th>Rainfall Runoff Reduction</th>
+            <th id='rr_reduction'>na</th>
+            <th id='rr_reduction1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Green Roof</th>
+            <th id='greenroof'>na</th>
+            <th id='greenroof1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+        </table>
       </div>
 
       <div class="dropdown">
         <button id="green" class="accordion green" type="button" data-toggle="dropdown"><img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret"></span></button>
       </div>
       <div class="panel">
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Urban Water Metabolism</a>
-          <div id='urban_water_met'>Results</div>
-          <div id='urba_water_met1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Urban Energy Metabolism</a>
-          <div id='urban_energy_met'>Results</div>
-          <div id='urban_energy_met1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
+
+        <table class='eval' id='listing-1'>
+          <tr>
+            <th>Criteria</th>
+            <th>Results</th>
+            <th>View</th>
+          </tr>
+          <tr>
+            <th>Urban Water Metabolism</th>
+            <th id='urban_water_met'>na</th>
+            <th id='urba_water_met1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Urban Energy Metabolism</th>
+            <th id='urban_energy_met'>na</th>
+            <th id='urban_energy_met1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+        </table>     
       </div>
 
       <div class="dropdown">
@@ -87,119 +110,154 @@
           </div>-->
         </div>
         <div class="panel">
-          <div class='eval' id='listing-0'>
-            <a href='#' class='title'>Proximity to transportation networks alternative to car</a>
-            <div id='netET'>View 
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-          </div>
-          <div class='eval' id='listing-1'>
-            <a href='#' class='title'>Road Space for Pedestrians</a>
-            <div id='road_space'>Results</div>
-            <div id='road_space1'>View:
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-          </div>
-          <div class='eval' id='listing-2'>
-            <a href='#' class='title'>Number of intersections per square kilometer</a>
-            <div id='inter_kilo'>Results</div>
-            <div id='inter_kilo1'>View:
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-          </div>
-          <div class='eval' id='listing-3'>
-            <a href='#' class='title'>Ryan's Walkscore</a>
-            <div id='walkscore'>Results</div>
-            <div id='walkscore1'>View<label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label></div>
-          </div>
-          <div class='eval' id='listing-3'>
-            <a href='#' class='title'>Residential Buildings w/i 5 minutes of transit</a>
-            <div id='resident_transit'>Results</div>
-            <div id='resident_transit1'>View<label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label></div>
-          </div>
-          <div class='eval' id='listing-3'>
-            <a href='#' class='title'>Maximum pedestrian block length</a>
-            <div id='ped_block'>Results</div>
-            <div id='ped_block1'>View<label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label></div>
-          </div>
+         
+          <table class='eval' id='listing-1'>
+            <tr>
+              <th>Criteria</th>
+              <th>Results</th>
+              <th>View</th>
+            </tr>
+            <tr>
+              <th>Proximity to transportation networks alternative to car</th>
+              <th id='transit'>na</th>
+              <th id='transit1'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th>Road Space for Pedestrians</th>
+              <th id='road_space'>na</th>
+              <th id='road_space1'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th>Number of intersections per square kilometer</th>
+              <th id='inter_kilo'>na</th>
+              <th id='inter_kilo1'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th>Ryan's Walkscore</th>
+              <th id='walkscore'>na</th>
+              <th id='walkscore1'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th>Residential Buildings w/i 5 minutes of transit</th>
+              <th id='resident_transit'>na</th>
+              <th id='resident_transit1'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+            <tr>
+              <th>Maximum pedestrian block length</th>
+              <th id='ped_block'>na</th>
+              <th id='ped_block1'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+          </table> 
         </div>
     
     <div class="dropdown">
       <button id="datadriven" class="accordion datadriven" type="button" data-toggle="dropdown"><img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span></button>
-        <!--<div class="icon">
-          <img src="media/DataDriven.svg" class="logo-image2" alt="Icon">
-          <p class="pad2 title">Data Driven</p>
-        </div>-->
+        
       </div>
       <div class="panel">
-        <div class='eval' id='listing-4'>
-          <a href='#' class='title'>Balance btween active and residential zones</a>
-          <div id='activity_balance'>Results</div>
-          <div id='activity_balance1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
-      </div>
+        <table class='eval' id='listing-1'>
+          <tr>
+            <th>Criteria</th>
+            <th>Results</th>
+            <th>View</th>
+          </tr>
+          <tr>
+            <th>Balance btween active and residential zones</th>
+            <th id='activity_balance'>na</th>
+            <th id='activity_balance'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+        </table>  
+      
+    </div>
     
     <div class="dropdown">
       <button id="inclusive" class="accordion inclusive" type="button" data-toggle="dropdown" ><img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span></button>
-        <!--<div class="icon">
-          <img src="media/Inclusive.svg" class="logo-image2" alt="Icon">
-          <p class="pad2 title">Inclusive</p>
-        </div>-->
+       
       </div>
       <div class="panel">
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Urban Diversity Index</a>
-          <div id='urban_diversity'>Results</div>
-          <div id='urban_diversity1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Absolute Compactness</a>
-          <div id='compact'>Results</div>
-          <div id='compact1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Green Space Deficit</a>
-          <div id='green_space'>Results</div>
-          <div id='green_space1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
-        <div class='eval' id='listing-1'>
-          <a href='#' class='title'>Amenities</a>
-          <div id='amenities'>Results</div>
-          <div id='amenities1'>View<label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label></div>
-        </div>
+
+        <table class='eval' id='listing-1'>
+          <tr>
+            <th>Criteria</th>
+            <th>Results</th>
+            <th>View</th>
+          </tr>
+          <tr>
+            <th>Urban Diversity Index</th>
+            <th id='urban_diversity'>na</th>
+            <th id='urban_diversity1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Absolute Compactness</th>
+            <th id='compact'>na</th>
+            <th id='compact1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Green Space Deficit</th>
+            <th id='green_space'>na</th>
+            <th id='green_space1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Amenities</th>
+            <th id='amenities'>na</th>
+            <th id='amenities1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+        </table>  
       </div> 
     
       
