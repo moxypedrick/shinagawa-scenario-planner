@@ -38,15 +38,36 @@ for (i = 0; i < acc.length; i++) {
   });
 } 
 
-const selectedFile = document.getElementById('amenities').files[0];
-console.log(selectedFile.size);
-console.log(selectedFile.type);
+
+var amenitiesFile = document.getElementById("amenities");
+amenitiesFile.addEventListener("change", handleFiles, false);
+var buildingsFile = document.getElementById("buildings");
+buildingsFile.addEventListener("change", handleFiles, false);
+var landcoverFile = document.getElementById("landcover");
+landcoverFile.addEventListener("change", handleFiles, false);
+var transportationFile = document.getElementById("transportation");
+transportationFile.addEventListener("change", handleFiles, false);
+var blocksFile = document.getElementById("blocks");
+blocksFile.addEventListener("change", handleFiles, false);
+var pdblocksFile = document.getElementById("pdblocks");
+pdblocksFile.addEventListener("change", handleFiles, false);
+
+
+
+function handleFiles(){
+  const fileList = this.files;
+  console.log('here');
+  console.log(fileList);
+  console.log(fileList[0]);
+}
 
 map.on('load', function() {
   map.addSource('soGeorgia', {
     'type' : 'geojson',
     'data' : 'data/S_Georgia.geojson' 
   })
+
+  
 
   map.addLayer({'id' : 'soGeorgiaLayer',
     'type' : 'fill',
