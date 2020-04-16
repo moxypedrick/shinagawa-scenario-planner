@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Shinagawa 70-70</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" type="text/css"/>
+</head>
+  <body>
+    <div class="sidebar pad2">
+      <div class="header1">
+        <img src="media/earthcraft logo w lockup@1000px.png" class="logo-image" alt="Icon of walkshed">
+      </div>
+      <button class="accordion">Responsive + Resilient</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+      
+      <button class="accordion">Green</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+      
+      <button class="accordion">Connected</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button class="accordion">Data Driven</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button class="accordion">Inclusive</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div> 
+
+      <div id='listings' class='listings'>
+        <div class='item' id='listing-0'>
+          <a href='#' class='title'>Net Evapotranspiration (inches)</a>
+          <div id='netET'>Click map for ETP.</div>
+        </div>
+
+        <div class='item' id='listing-1'>
+          <a href='#' class='title'>1-year, 24-hour Storm (inches)</a>
+          <div id='oneYear'>Click map for design storm.</div>
+        </div>
+
+        <div class='item' id='listing-2'>
+          <a href='#' class='title'>Ecoregion</a>
+          <div id='ecoRegion'>Click map for Ecoregion.</div>
+        </div>
+
+        <div class='item' id='listing-3'>
+          <a href='#' class='title'>Jobs to Housing Balance</a>
+          <div id='jobs2housing'>Click map for ratio.</div>
+        </div>
+
+      </div>
+    </div>
+    <div id="map" class="map pad2"></div>   
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+        <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
+        
+        <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css' type='text/css'/>
+        <script type="text/javascript" src='scripts/script.js'></script>
+
+  <div id="foot" class="foot2">
+    <div>
+      <button class="instructions" onClick="myFunction()">Data Files <i class="fa fa-navicon"></i></button>
+    </div>
+    <div class="sidebar-foot-1 whole">
+      <div class='listings'>
+        <div class='item'>
+          Load geojson files here to calculate your designs impact on the Shinagawa 70-70 plan.
+        </div>
+        <div class='item'>
+          <a href='#' class='title'>
+            Generate Walkshed
+          </a>
+          <div class="icon">
+            <img src="media/ecc map walkshed icon-final.svg" class="logo-image2" alt="Icon of walkshed">
+            <p>To generate an ECC Walkshed, hold control key and click (for Macs command + click) on map - the area that one is able to walk to in 5 and 10 minutes will be bound by blue polygons. Use this to determine which nearyby amenities are walkable for residents in your ECC project.
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script>
+function myFunction(){
+  if(document.getElementById("foot").className === "foot2") {
+    document.getElementById("foot").className = "foot1";
+    } else {
+      document.getElementById("foot").className = "foot2";
+    }
+};
+</script>
+  </div>
+  </body>
+</html>
