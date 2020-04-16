@@ -38,6 +38,10 @@ for (i = 0; i < acc.length; i++) {
   });
 } 
 
+const selectedFile = document.getElementById('amenities').files[0];
+console.log(selectedFile.size);
+console.log(selectedFile.type);
+
 map.on('load', function() {
   map.addSource('soGeorgia', {
     'type' : 'geojson',
