@@ -1,6 +1,6 @@
 body {
   color:#404040;
-  font: 300 15px/26px 'Roboto Slab', serif;
+  font: 300 15px/26px 'Roboto Slab', 'serif';
   margin:0;
   padding:0;
   -webkit-font-smoothing:antialised;
@@ -33,12 +33,16 @@ h1 {
   margin: 1;
   font-weight: 400;
   line-height: 20px;
-  padding: 2px 2px;
-  background: #fff;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  outline-style: dotted;
+  color: #eee ;
+  background: #124A95;
 }
 
 .popup {
-  font: 300 15px/26px 'Roboto Slab', serif;
+  font: 300 15px/26px 'Roboto Slab', 'serif';
   font-size: 12px;
   margin: -10px;
   padding: -10px; 
@@ -55,7 +59,7 @@ h1 {
 }
 
 .sidebar-foot-1 {  
-  font: 300 15px/26px 'Roboto Slab', serif;
+  font: 300 15px/26px 'Roboto Slab', 'serif';
   position: fixed;
   height: 15vh;
   line-height:1.5;
@@ -85,7 +89,7 @@ h1 {
 }
 
 .listings-1 .item {
-  font: 300 'Roboto Slab', serif;
+  font: 300 'Roboto Slab', 'serif';
   display: block;
   padding: 1px;
   text-decoration: none;
@@ -156,11 +160,15 @@ td, th {
   padding: 2px;
 }
 
+.col1{
+  width:10vw;
+}
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  padding-bottom: 10px;
+  padding: 18px;
   background-color: white;
+  font-family: 'Roboto Slab', 'serif';
   display: none;
   overflow: hidden;
 } 
@@ -346,7 +354,7 @@ input:checked + .slider:before {
   padding: 10px;
   border: none;
   border-radius: 3px;
-  font: 'Roboto Slab', serif;
+  font: 'Roboto Slab', 'serif';
   font-size: 12px;
   text-align: center;
   color: #fff;
@@ -372,15 +380,16 @@ input:checked + .slider:before {
 .logo-image2{
     width: 5vw;
     max-width:40px;
+    padding-right: 15px;
   }
 
 
   .accordion {
     display: block;
-    font: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', 'serif';
+    font-size: 18px;
     background-color: #d47499;
     color: #eee;
-    
     padding: 18px;
     width: 100%;
     text-align: left;
@@ -393,7 +402,7 @@ input:checked + .slider:before {
   position: relative;
   width: 100vw;
   height: 6vh;
-  font: 'Roboto Slab', serif;
+  font: 'Roboto Slab', 'serif';
   font-size: 18px;
   text-align: center;
   color: #fff;
@@ -412,7 +421,7 @@ input:checked + .slider:before {
   width: 100vw;
   height: 20vh;
   background-color: #fff;
-  font: 300 'Roboto Slab', serif;
+  font: 300 'Roboto Slab', 'serif';
   -webkit-transition: height .3s ease;
   transition: height .3s ease; 
   cursor: 
@@ -425,7 +434,7 @@ input:checked + .slider:before {
   width: 100vw;
   height: 6vh;
   background-color: #fff;
-  font: 300 'Roboto Slab', serif;
+  font: 300 'Roboto Slab', 'serif';
   -webkit-transition: height .3s ease;
   transition: height .3s ease; 
 }
@@ -463,7 +472,7 @@ input:checked + .slider:before {
   width: 100vw;
   height: 45vh;
   background-color: #fff;
-  font: 300 'Roboto Slab', serif;
+  font: 300 'Roboto Slab', 'serif';
   -webkit-transition: height .3s ease;
   transition: height .3s ease; 
 }
@@ -475,7 +484,7 @@ input:checked + .slider:before {
   width: 100vw;
   height: 6vh;
   background-color: #fff;
-  font: 300 'Roboto Slab', serif;
+  font: 300 'Roboto Slab', 'serif';
   -webkit-transition: height .3s ease;
   transition: height .3s ease; 
 }
