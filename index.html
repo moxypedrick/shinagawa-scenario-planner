@@ -34,7 +34,7 @@
         <img src="" class="logo-image" alt="Shinagawa 70-70">
       </div>
 
-      <div class="dropdown"> <!--accordion responsive btn btn-primary dropdown-toggle   type="button" data-toggle="dropdown"-->
+      <div class="dropdown">
         <button id="responsive" class="accordion responsive" type="button" data-toggle="dropdown"><img src="media/Responsive.svg" class="logo-image2" alt="Icon">Responsive + Resilient <span class="caret"></span></button>
         
       </div>
@@ -68,6 +68,8 @@
         </table>
       </div>
 
+     
+      
       <div class="dropdown">
         <button id="green" class="accordion green" type="button" data-toggle="dropdown"><img src="media/Green.svg" class="logo-image2" alt="Icon">Green<span class="caret"></span></button>
       </div>
@@ -102,89 +104,17 @@
         </table>     
       </div>
 
+      
+
       <div class="dropdown">
         <button id="connected" class="accordion connected" type="button" data-toggle="dropdown"><img src="media/Connected.svg" class="logo-image2" alt="Icon">Connected<span class="caret"></span></button>
           <!--<div class="icon">
             <img src="media/Connected.svg" class="logo-image2" alt="Icon">
             <p class="pad2 title">Connected</p>
           </div>-->
-        </div>
-        <div class="panel">
-         
-          <table class='eval' id='listing-1'>
-            <tr>
-              <th>Criteria</th>
-              <th>Results</th>
-              <th>View</th>
-            </tr>
-            <tr>
-              <th>Proximity to transportation networks alternative to car</th>
-              <th id='transit'>na</th>
-              <th id='transit1'>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </th>
-            </tr>
-            <tr>
-              <th>Road Space for Pedestrians</th>
-              <th id='road_space'>na</th>
-              <th id='road_space1'>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </th>
-            </tr>
-            <tr>
-              <th>Number of intersections per square kilometer</th>
-              <th id='inter_kilo'>na</th>
-              <th id='inter_kilo1'>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </th>
-            </tr>
-            <tr>
-              <th>Ryan's Walkscore</th>
-              <th id='walkscore'>na</th>
-              <th id='walkscore1'>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </th>
-            </tr>
-            <tr>
-              <th>Residential Buildings w/i 5 minutes of transit</th>
-              <th id='resident_transit'>na</th>
-              <th id='resident_transit1'>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </th>
-            </tr>
-            <tr>
-              <th>Maximum pedestrian block length</th>
-              <th id='ped_block'>na</th>
-              <th id='ped_block1'>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </th>
-            </tr>
-          </table> 
-        </div>
-    
-    <div class="dropdown">
-      <button id="datadriven" class="accordion datadriven" type="button" data-toggle="dropdown"><img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span></button>
-        
       </div>
       <div class="panel">
+        
         <table class='eval' id='listing-1'>
           <tr>
             <th>Criteria</th>
@@ -192,25 +122,101 @@
             <th>View</th>
           </tr>
           <tr>
-            <th>Balance btween active and residential zones</th>
-            <th id='activity_balance'>na</th>
-            <th id='activity_balance'>
+            <th>Proximity to transportation networks alternative to car</th>
+            <th id='transit'>na</th>
+            <th id='transit1'>
               <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
             </th>
           </tr>
-        </table>  
+          <tr>
+            <th>Road Space for Pedestrians</th>
+            <th id='road_space'>na</th>
+            <th id='road_space1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Number of intersections per square kilometer</th>
+            <th id='inter_kilo'>na</th>
+            <th id='inter_kilo1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Ryan's Walkscore</th>
+            <th id='walkscore'>na</th>
+            <th id='walkscore1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Residential Buildings w/i 5 minutes of transit</th>
+            <th id='resident_transit'>na</th>
+            <th id='resident_transit1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+          <tr>
+            <th>Maximum pedestrian block length</th>
+            <th id='ped_block'>na</th>
+            <th id='ped_block1'>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </th>
+          </tr>
+        </table> 
+      </div>
+
       
-    </div>
-    
-    <div class="dropdown">
-      <button id="inclusive" class="accordion inclusive" type="button" data-toggle="dropdown" ><img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span></button>
-       
+
+      <div class="dropdown">
+        <button id="datadriven" class="accordion datadriven" type="button" data-toggle="dropdown"><img src="media/DataDriven.svg" class="logo-image2" alt="Icon">Data Driven<span class="caret"></span></button>
+          
       </div>
       <div class="panel">
+          <table class='eval' id='listing-1'>
+            <tr>
+              <th>Criteria</th>
+              <th>Results</th>
+              <th>View</th>
+            </tr>
+            <tr>
+              <th>Balance btween active and residential zones</th>
+              <th id='activity_balance'>na</th>
+              <th id='activity_balance'>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </th>
+            </tr>
+          </table>  
+        
+      </div>
 
+      
+
+      <div class="dropdown">
+        <button id="inclusive" class="accordion inclusive" type="button" data-toggle="dropdown" ><img src="media/Inclusive.svg" class="logo-image2" alt="Icon">Inclusive<span class="caret"></span></button> 
+      </div>
+      <div class="panel">
         <table class='eval' id='listing-1'>
           <tr>
             <th>Criteria</th>
