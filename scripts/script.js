@@ -22,9 +22,6 @@ var acc = document.getElementsByClassName("dropdown");
 var i;
 
 
-
-
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -63,38 +60,24 @@ function handleFiles(){
 }
 
 map.on('load', function() {
-  map.addSource('soGeorgia', {
+  map.addSource('bmp', {
     'type' : 'geojson',
-    'data' : 'data/S_Georgia.geojson' 
+    'data' : 'data/bmp.geojson' 
   })
 
   
 
-  map.addLayer({'id' : 'soGeorgiaLayer',
+  map.addLayer({'id' : 'bmp',
     'type' : 'fill',
-    'source': 'soGeorgia', 
+    'source': 'bmp', 
     'paint' : {
       'fill-color':'#dbdbdb',
-      'fill-opacity':0.01,
+      'fill-opacity':1,
       'fill-outline-color' : '#000000'    
     }
   })
 
-  map.addSource('noGeorgia', {
-    'type' : 'geojson',
-    'data' : 'data/N_Georgia.geojson' 
-  })
-
-  map.addLayer({'id' : 'noGeorgiaLayer',
-    'type' : 'fill',
-    'source': 'noGeorgia', 
-    'paint' : {
-      'fill-color':'#dbdbdb',
-      'fill-opacity':0.01,
-      'fill-outline-color' : '#000000'    
-    }
-  }, 'soGeorgiaLayer')
-
+  
    map.addSource('isochrone', {
     'type' : 'geojson',
     'data' : 'https://api.mapbox.com/isochrone/v1/mapbox/walking/-84.380378,33.767279?contours_minutes=2,5,7&contours_colors=6706ce,04e813&polygons=true&access_token=pk.eyJ1IjoibW94eXBlZCIsImEiOiJjaWgydGpwdmYweHJydnFtMzZzOXpmNjg3In0.5TXWYv0Z7nsOZHneIQOhxg' 
@@ -108,23 +91,11 @@ map.on('load', function() {
       'fill-opacity':0.1,
       'fill-outline-color' : '#000000' 
     }
-  }, 'noGeorgiaLayer')
+  }, 'bmp')
 
 });
 
-map.on('click','soGeorgiaLayer', function(e){
-  var features = map.queryRenderedFeatures(e.point);
-  console.log(e);
-  updateArea(features);
-})
 
-
-
-map.on('click','noGeorgiaLayer', function(e){
-   var features = map.queryRenderedFeatures(e.point);
-  updateArea(features);
-  //console.log(features);
-})
 
 var draw = new MapboxDraw({
     displayControlsDefault: false,
@@ -145,9 +116,7 @@ function updateArea(e){
 
 map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
-    country: 'us',
-    region: 'Georgia',
-    bbox:  [-86.010452, 30.537327, -80.771171, 35.210589] ,
+    country: 'japan',
 }), 'top-right');
 
 map.on('click', function(e){
@@ -160,10 +129,10 @@ map.on('click', function(e){
 
 var scale = new mapboxgl.ScaleControl({
     maxWidth: 100,
-    unit: 'imperial'
+    unit: 'metric'
 });
 map.addControl(scale, 'bottom-right');
-scale.setUnit('imperial');
+scale.setUnit('metric');
 map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 map.addControl(draw, 'top-right');
 
